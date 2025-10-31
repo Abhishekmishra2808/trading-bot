@@ -16,10 +16,8 @@ class BasicBot:
         self._setup_logging()
         
         if testnet:
-            # Use testnet URLs which have less geo-restrictions
-            self.client = Client(api_key, api_secret, testnet=False)  # Don't use built-in testnet
-            self.client.API_URL = 'https://testnet.binancefuture.com'
-            self.client.FUTURES_URL = 'https://testnet.binancefuture.com/fapi/v1'
+            # Use testnet with the built-in support
+            self.client = Client(api_key, api_secret, testnet=True)
             self.logger.info("Using Binance Futures TESTNET: https://testnet.binancefuture.com")
         else:
             self.client = Client(api_key, api_secret, testnet=False)
