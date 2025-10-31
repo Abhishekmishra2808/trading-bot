@@ -18,13 +18,14 @@ bot = None
 def initialize_bot():
     global bot
     try:
-        api_key = os.getenv('API_KEY')
-        api_secret = os.getenv('API_SECRET')
+        api_key = os.getenv('API_KEY') or os.environ.get('API_KEY')
+        api_secret = os.getenv('API_SECRET') or os.environ.get('API_SECRET')
         
         if not api_key or not api_secret:
-            logger.error("API credentials not found in .env file")
+            logger.error(f"API credentials not found. API_KEY exists: {bool(api_key)}, API_SECRET exists: {bool(api_secret)}")
             return False
         
+        logger.info(f"Initializing bot with API key: {api_key[:10]}...")
         bot = BasicBot(api_key, api_secret, testnet=True)
         logger.info("Bot initialized successfully")
         return True
