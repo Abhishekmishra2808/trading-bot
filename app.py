@@ -14,6 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 bot = None
+# Environment variables loaded from Vercel
 
 def initialize_bot():
     global bot
