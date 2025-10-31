@@ -14,16 +14,18 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 bot = None
+last_init_error = None
 # Environment variables loaded from Vercel
 
 def initialize_bot():
-    global bot
+    global bot, last_init_error
     try:
         api_key = os.getenv('API_KEY') or os.environ.get('API_KEY')
         api_secret = os.getenv('API_SECRET') or os.environ.get('API_SECRET')
         
         if not api_key or not api_secret:
-            logger.error(f"API credentials not found. API_KEY exists: {bool(api_key)}, API_SECRET exists: {bool(api_secret)}")
+            last_init_error = f"Missing credentials. API_KEY set: {bool(api_key)}, API_SECRET set: {bool(api_secret)}"
+            logger.error(last_init_error)
             return False
         
         logger.info(f"Initializing bot with API key: {api_key[:10]}...")
@@ -31,6 +33,7 @@ def initialize_bot():
         logger.info("Bot initialized successfully")
         return True
     except Exception as e:
+        last_init_error = str(e)
         logger.error(f"Failed to initialize bot: {e}")
         return False
 
@@ -46,7 +49,6 @@ def init_bot():
 
 @app.route('/api/market-order', methods=['POST'])
 def market_order():
-    global bot
     try:
         # Reinitialize bot if needed
         if bot is None:
@@ -140,7 +142,7 @@ def get_balance():
         if bot is None:
             logger.info("Bot is None, reinitializing...")
             if not initialize_bot():
-                return jsonify({'success': False, 'message': 'Bot not initialized. Failed to connect to API.'}), 400
+                return jsonify({'success': False, 'message': 'Bot not initialized. Failed to connect to API.', 'details': last_init_error}), 400
         
         balance = bot.get_account_balance()
         return jsonify({'success': True, 'balance': balance})
@@ -156,6 +158,21 @@ def order_status():
         return jsonify({'success': True, 'order': order})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 400
+
+@app.route('/api/health', methods=['GET'])
+def health():
+    """Expose environment and bot init status for debugging in serverless."""
+    api_key_exists = bool(os.getenv('API_KEY') or os.environ.get('API_KEY'))
+    api_secret_exists = bool(os.getenv('API_SECRET') or os.environ.get('API_SECRET'))
+    return jsonify({
+        'ok': True,
+        'env': {
+            'API_KEY': api_key_exists,
+            'API_SECRET': api_secret_exists,
+        },
+        'botInitialized': bot is not None,
+        'lastInitError': last_init_error,
+    })
 
 # Initialize bot on module load for Vercel
 initialize_bot()
