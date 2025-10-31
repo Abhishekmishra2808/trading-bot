@@ -1,0 +1,775 @@
+2025-10-29 02:21:43 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:21:43 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:21:43 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:21:43 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:21:44 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:21:44 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:21:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:21:45 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:21:45 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:21:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:21:46 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:21:46 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:22:23 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:23 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:22:23 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:23 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:22:24 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:24 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:22:24 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:22:24 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:22:24 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:36 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:36 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:22:36 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:36 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:22:36 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:36 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:22:36 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:22:36 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:22:36 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:38 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-10-29 02:22:38 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-10-29 02:22:47 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:22:47 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: BUY 1.0 BTCUSDT @ 1.0
+2025-10-29 02:22:47 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:22:47 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=LIMIT, quantity=1.0, price=1.0, timeInForce=GTC)
+2025-10-29 02:22:47 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:22:47 | ERROR    | BasicBot | place_limit_order | BINANCE API ERROR
+2025-10-29 02:22:47 | ERROR    | BasicBot | place_limit_order | Error Code: -2015
+2025-10-29 02:22:47 | ERROR    | BasicBot | place_limit_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:22:47 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:22:55 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:55 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:22:55 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:55 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:22:55 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:22:55 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:22:55 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:22:55 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:22:55 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:23:03 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:23:03 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:23:03 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:23:03 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:23:04 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:23:04 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:23:04 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:23:04 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:23:04 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:30:05 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:30:05 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:30:05 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:30:05 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:30:06 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:30:06 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:30:07 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:30:07 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:30:07 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:30:07 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:30:07 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:30:07 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:30:35 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:30:35 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:30:35 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:30:35 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:30:37 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:30:37 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:30:37 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:30:37 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:30:37 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:31:09 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:31:09 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: BUY 3.0 ETHUSDT @ 2.0
+2025-10-29 02:31:09 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:31:09 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=ETHUSDT, side=BUY, type=LIMIT, quantity=3.0, price=2.0, timeInForce=GTC)
+2025-10-29 02:31:09 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:31:09 | ERROR    | BasicBot | place_limit_order | BINANCE API ERROR
+2025-10-29 02:31:09 | ERROR    | BasicBot | place_limit_order | Error Code: -2015
+2025-10-29 02:31:09 | ERROR    | BasicBot | place_limit_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:31:09 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-10-29 02:33:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:33:45 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:33:45 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:33:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:33:46 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:33:46 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:34:29 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:34:29 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.0 BTCUSDT
+2025-10-29 02:34:29 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:34:29 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=1.0)
+2025-10-29 02:34:30 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:34:30 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:34:30 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:34:30 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:34:30 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:36:32 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:36:32 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:36:32 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:36:32 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:36:32 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:36:33 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:36:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:36:47 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:36:47 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:36:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:36:47 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:36:48 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:37:12 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:37:12 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:37:12 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:37:12 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:37:13 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:37:13 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:37:14 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:37:14 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:37:14 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:37:14 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:37:14 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:37:15 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:37:36 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:37:36 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:37:36 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:37:36 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:37:38 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:37:38 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:37:38 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:37:38 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:37:38 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:38:57 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:38:57 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:38:57 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:38:57 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:38:58 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:38:59 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:39:06 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:39:06 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:39:06 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:39:06 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:39:07 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:39:07 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:39:09 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:09 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-29 02:39:09 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:09 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-29 02:39:10 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:10 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:39:10 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:39:10 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:39:10 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:13 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-10-29 02:39:13 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-10-29 02:39:14 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-10-29 02:39:14 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-10-29 02:39:22 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:22 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.0 BNBUSDT
+2025-10-29 02:39:22 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:22 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BNBUSDT, side=BUY, type=MARKET, quantity=1.0)
+2025-10-29 02:39:22 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:39:22 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:39:22 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:39:22 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:39:22 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:40:20 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:40:20 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.0 BNBUSDT
+2025-10-29 02:40:20 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:40:20 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BNBUSDT, side=BUY, type=MARKET, quantity=1.0)
+2025-10-29 02:40:21 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:40:21 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:40:21 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:40:21 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:40:21 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:42:29 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:42:29 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-29 02:42:29 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-29 02:42:29 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-29 02:42:30 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-29 02:42:31 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-29 02:43:07 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:43:07 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-10-29 02:43:07 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:43:07 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-10-29 02:43:08 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-29 02:43:08 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-29 02:43:08 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-29 02:43:08 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-29 02:43:08 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-31 13:24:20 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:24:20 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 13:24:20 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 13:24:20 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:24:20 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 13:24:21 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-31 13:24:22 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:24:22 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 13:24:22 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 13:24:22 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:24:22 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 13:24:22 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-31 13:25:06 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:25:06 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 13:25:06 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 13:25:06 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:25:07 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 13:25:07 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-31 13:25:07 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:25:07 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 13:25:07 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 13:25:07 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 13:25:08 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 13:25:08 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-31 13:25:19 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-31 13:25:19 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-31 13:25:19 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-31 13:25:19 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-31 13:25:21 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-31 13:25:21 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-31 13:25:21 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-31 13:25:21 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-31 13:25:21 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-31 20:39:13 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 20:39:13 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 20:39:13 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 20:39:13 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 20:39:18 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 20:39:19 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-31 20:39:20 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 20:39:20 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 20:39:20 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 20:39:20 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 20:39:21 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 20:39:21 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-10-31 20:39:36 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-31 20:39:36 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-10-31 20:39:36 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-10-31 20:39:36 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-10-31 20:39:37 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-31 20:39:37 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-10-31 20:39:37 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-10-31 20:39:37 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-10-31 20:39:37 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-10-31 21:04:15 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-10-31 21:04:17 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-10-31 21:05:12 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 21:05:12 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-10-31 21:05:12 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-10-31 21:05:12 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-10-31 21:05:13 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-10-31 21:05:13 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:00:42 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:00:42 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:00:42 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:00:42 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:00:43 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:00:43 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:00:44 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:00:44 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:00:44 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:00:44 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:00:45 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:00:45 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:01:03 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:01:03 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:01:03 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:01:03 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:01:05 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:01:05 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:01:06 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:01:06 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:01:06 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:01:06 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:01:06 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:01:07 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:01:20 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 00:01:20 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-11-01 00:01:20 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 00:01:20 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-11-01 00:01:21 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 00:01:21 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 00:01:21 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-11-01 00:01:21 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-11-01 00:01:21 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 00:04:20 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 00:04:20 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:05:24 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:05:24 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:05:25 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:05:25 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:05:25 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 00:10:30 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 00:10:31 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:10:31 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 00:10:31 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 00:10:31 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:07:05 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:07:05 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:07:05 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:07:05 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:07:06 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:07:06 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:07:07 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:07:07 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:07:07 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:07:07 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:07:07 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:07:07 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:07:13 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:07:14 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:07:25 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:07:25 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.01 BTCUSDT
+2025-11-01 01:07:25 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:07:25 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.01)
+2025-11-01 01:07:26 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:07:26 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:07:26 | ERROR    | BasicBot | place_market_order | Error Code: -2015
+2025-11-01 01:07:26 | ERROR    | BasicBot | place_market_order | Error Message: Invalid API-key, IP, or permissions for action
+2025-11-01 01:07:26 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:07:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:07:45 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:07:45 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:07:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:07:45 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:07:46 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:07:52 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:07:53 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786404}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:09:06 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:09:07 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786404}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:09:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:09:47 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:09:47 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:09:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:09:48 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:09:48 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:09:51 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:09:51 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:09:51 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:09:51 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:09:52 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:09:52 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:10:14 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:14 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:10:14 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:10:14 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:14 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:10:15 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:10:15 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:15 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:10:15 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:10:15 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:16 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:10:16 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:10:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:47 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:10:47 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:10:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:48 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:10:48 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:10:49 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:49 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:10:49 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:10:49 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:10:50 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:10:50 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:10:53 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:10:54 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:10:57 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:10:57 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:11:09 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:11:10 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:12:24 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:12:24 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:13:27 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:13:27 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:13:27 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:13:27 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:13:27 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:13:28 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:13:28 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:13:28 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:13:31 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:13:31 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:13:31 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:13:31 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:13:31 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:13:31 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:13:44 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:13:45 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-11-01 01:22:39 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:22:39 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:22:39 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:22:39 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:22:39 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:22:40 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:22:40 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:22:40 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786404}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:22:50 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:22:50 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:22:50 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:22:50 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:22:50 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:22:50 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:22:51 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:22:51 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:22:51 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:22:51 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:22:52 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:22:52 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:22:57 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:22:57 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786404}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:23:09 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:23:09 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BNBUSDT
+2025-11-01 01:23:09 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:23:09 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BNBUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-11-01 01:23:09 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:23:09 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:23:09 | ERROR    | BasicBot | place_market_order | Error Code: -1111
+2025-11-01 01:23:09 | ERROR    | BasicBot | place_market_order | Error Message: Precision is over the maximum defined for this asset.
+2025-11-01 01:23:09 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:32:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:32:45 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:32:45 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:32:45 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:32:46 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:32:46 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:32:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:32:47 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:32:47 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:32:47 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:32:48 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:32:48 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:32:49 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:32:50 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786404}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.001 BTCUSDT
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001)
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992086873, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ8baf6be058a1de543e437', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761940983205}
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | Order ID: 7992086873
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:33:02 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:33:02 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:33:02 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4999.95610456', 'crossWalletBalance': '4999.95610456', 'crossUnPnl': '-0.08759992', 'availableBalance': '4994.38595463', 'maxWithdrawAmount': '4994.38595463', 'marginAvailable': True, 'updateTime': 1761940983205}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:33:16 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:16 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: BUY 0.001 BTCUSDT @ 221.0
+2025-11-01 01:33:16 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:16 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=LIMIT, quantity=0.001, price=221.0, timeInForce=GTC)
+2025-11-01 01:33:16 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:16 | ERROR    | BasicBot | place_limit_order | BINANCE API ERROR
+2025-11-01 01:33:16 | ERROR    | BasicBot | place_limit_order | Error Code: -4013
+2025-11-01 01:33:16 | ERROR    | BasicBot | place_limit_order | Error Message: Price less than min price.
+2025-11-01 01:33:16 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:30 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:30 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: BUY 0.001 BTCUSDT @ 2213211.0
+2025-11-01 01:33:30 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:30 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=LIMIT, quantity=0.001, price=2213211.0, timeInForce=GTC)
+2025-11-01 01:33:30 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:30 | ERROR    | BasicBot | place_limit_order | BINANCE API ERROR
+2025-11-01 01:33:30 | ERROR    | BasicBot | place_limit_order | Error Code: -4002
+2025-11-01 01:33:30 | ERROR    | BasicBot | place_limit_order | Error Message: Price greater than max price.
+2025-11-01 01:33:30 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:39 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:39 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: BUY 0.001 BTCUSDT @ 12332.0
+2025-11-01 01:33:39 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:39 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=LIMIT, quantity=0.001, price=12332.0, timeInForce=GTC)
+2025-11-01 01:33:40 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:40 | ERROR    | BasicBot | place_limit_order | BINANCE API ERROR
+2025-11-01 01:33:40 | ERROR    | BasicBot | place_limit_order | Error Code: -4164
+2025-11-01 01:33:40 | ERROR    | BasicBot | place_limit_order | Error Message: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2025-11-01 01:33:40 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:41 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:41 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: SELL 0.001 BTCUSDT @ 12332.0
+2025-11-01 01:33:41 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:41 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=SELL, type=LIMIT, quantity=0.001, price=12332.0, timeInForce=GTC)
+2025-11-01 01:33:42 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:42 | ERROR    | BasicBot | place_limit_order | BINANCE API ERROR
+2025-11-01 01:33:42 | ERROR    | BasicBot | place_limit_order | Error Code: -4024
+2025-11-01 01:33:42 | ERROR    | BasicBot | place_limit_order | Error Message: Limit price can't be lower than 104142.76.
+2025-11-01 01:33:42 | ERROR    | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:46 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:46 | INFO     | BasicBot | place_limit_order | PLACING LIMIT ORDER: BUY 1.0 BTCUSDT @ 12332.0
+2025-11-01 01:33:46 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:46 | INFO     | BasicBot | place_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=LIMIT, quantity=1.0, price=12332.0, timeInForce=GTC)
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | API Response: {'orderId': 7992154689, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJffa6efacec96d164f29f53', 'price': '12332.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941027588}
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | LIMIT ORDER PLACED SUCCESSFULLY
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | Order ID: 7992154689
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | Status: NEW
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | Price: 12332.00
+2025-11-01 01:33:47 | INFO     | BasicBot | place_limit_order | ================================================================================
+2025-11-01 01:33:47 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:33:47 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4999.95610456', 'crossWalletBalance': '4999.95610456', 'crossUnPnl': '-0.11727949', 'availableBalance': '4377.75775904', 'maxWithdrawAmount': '4377.75775904', 'marginAvailable': True, 'updateTime': 1761940983205}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:34:00 | INFO     | BasicBot | get_order_status | Fetching order status for Order ID: 7992154689
+2025-11-01 01:34:01 | INFO     | BasicBot | get_order_status | Order Status: NEW
+2025-11-01 01:34:13 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:13 | INFO     | BasicBot | place_stop_limit_order | PLACING STOP-LIMIT ORDER: BUY 1.0 BTCUSDT @ 32221.0 (stop: 2112.0)
+2025-11-01 01:34:13 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:13 | INFO     | BasicBot | place_stop_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=STOP, quantity=1.0, price=32221.0, stopPrice=2112.0)
+2025-11-01 01:34:14 | ERROR    | BasicBot | place_stop_limit_order | API ERROR: -4183 - Limit price can't be higher than 2217.59
+2025-11-01 01:34:28 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:28 | INFO     | BasicBot | place_stop_limit_order | PLACING STOP-LIMIT ORDER: BUY 1.0 BTCUSDT @ 2145.0 (stop: 2112.0)
+2025-11-01 01:34:28 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:28 | INFO     | BasicBot | place_stop_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=STOP, quantity=1.0, price=2145.0, stopPrice=2112.0)
+2025-11-01 01:34:29 | ERROR    | BasicBot | place_stop_limit_order | API ERROR: -2021 - Order would immediately trigger.
+2025-11-01 01:34:36 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:36 | INFO     | BasicBot | place_stop_limit_order | PLACING STOP-LIMIT ORDER: SELL 1.0 BTCUSDT @ 2145.0 (stop: 2112.0)
+2025-11-01 01:34:36 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:36 | INFO     | BasicBot | place_stop_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=SELL, type=STOP, quantity=1.0, price=2145.0, stopPrice=2112.0)
+2025-11-01 01:34:36 | ERROR    | BasicBot | place_stop_limit_order | API ERROR: -2019 - Margin is insufficient.
+2025-11-01 01:34:43 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:43 | INFO     | BasicBot | place_stop_limit_order | PLACING STOP-LIMIT ORDER: BUY 2.0 BTCUSDT @ 2145.0 (stop: 2112.0)
+2025-11-01 01:34:43 | INFO     | BasicBot | place_stop_limit_order | ================================================================================
+2025-11-01 01:34:43 | INFO     | BasicBot | place_stop_limit_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=STOP, quantity=2.0, price=2145.0, stopPrice=2112.0)
+2025-11-01 01:34:44 | ERROR    | BasicBot | place_stop_limit_order | API ERROR: -2021 - Order would immediately trigger.
+2025-11-01 01:34:55 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:34:55 | INFO     | BasicBot | execute_twap | EXECUTING TWAP STRATEGY: BUY 1.0 BTCUSDT
+2025-11-01 01:34:55 | INFO     | BasicBot | execute_twap | Orders: 10 | Interval: 60.00s
+2025-11-01 01:34:55 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:34:55 | INFO     | BasicBot | execute_twap | TWAP Order 1/10
+2025-11-01 01:34:55 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:34:55 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:34:55 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:34:55 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992260208, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJff4502e59781365f9925e5', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941096543}
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | Order ID: 7992260208
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:34:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:35:56 | INFO     | BasicBot | execute_twap | TWAP Order 2/10
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992355535, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ8003432a958e40f736726f', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941156721}
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | Order ID: 7992355535
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:35:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:36:56 | INFO     | BasicBot | execute_twap | TWAP Order 3/10
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992446704, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ86575d58226dfe67e51798', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941217357}
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | Order ID: 7992446704
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:36:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:37:56 | INFO     | BasicBot | execute_twap | TWAP Order 4/10
+2025-11-01 01:37:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:37:56 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:37:56 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:37:56 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992537301, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ821f8465188792e03b1d3a', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941277838}
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | Order ID: 7992537301
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:37:59 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:38:59 | INFO     | BasicBot | execute_twap | TWAP Order 5/10
+2025-11-01 01:38:59 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:38:59 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:38:59 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:38:59 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992630752, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ327d44317c1be72f6368c6', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941339783}
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | Order ID: 7992630752
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:39:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:40:00 | INFO     | BasicBot | execute_twap | TWAP Order 6/10
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992725255, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbb9c1a19c2ec8dbe0afd3c', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941400770}
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | Order ID: 7992725255
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:40:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:41:00 | INFO     | BasicBot | execute_twap | TWAP Order 7/10
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7992817928, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJb9173546a918c1fae1efbd', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941460966}
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | Order ID: 7992817928
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:41:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:42:00 | INFO     | BasicBot | execute_twap | TWAP Order 8/10
+2025-11-01 01:42:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:42:00 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:42:00 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:42:00 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:42:01 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:42:01 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:42:01 | ERROR    | BasicBot | place_market_order | Error Code: -2019
+2025-11-01 01:42:01 | ERROR    | BasicBot | place_market_order | Error Message: Margin is insufficient.
+2025-11-01 01:42:01 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:42:01 | ERROR    | BasicBot | execute_twap | TWAP FAILED: APIError(code=-2019): Margin is insufficient.
+2025-11-01 01:43:28 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:28 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.01 BTCUSDT
+2025-11-01 01:43:28 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:28 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.01)
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7993051177, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJc56c151c56e5b67be98ddb', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941609843}
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | Order ID: 7993051177
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:43:29 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:29 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:43:29 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4968.81428888', 'crossWalletBalance': '4968.81428888', 'crossUnPnl': '49.86367403', 'availableBalance': '501.37088920', 'maxWithdrawAmount': '501.37088920', 'marginAvailable': True, 'updateTime': 1761941609843}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:43:44 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:43:44 | INFO     | BasicBot | execute_twap | EXECUTING TWAP STRATEGY: BUY 1.0 BTCUSDT
+2025-11-01 01:43:44 | INFO     | BasicBot | execute_twap | Orders: 10 | Interval: 6.00s
+2025-11-01 01:43:44 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:43:44 | INFO     | BasicBot | execute_twap | TWAP Order 1/10
+2025-11-01 01:43:44 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:44 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.1 BTCUSDT
+2025-11-01 01:43:44 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:44 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.1)
+2025-11-01 01:43:45 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:45 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:43:45 | ERROR    | BasicBot | place_market_order | Error Code: -2019
+2025-11-01 01:43:45 | ERROR    | BasicBot | place_market_order | Error Message: Margin is insufficient.
+2025-11-01 01:43:45 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:45 | ERROR    | BasicBot | execute_twap | TWAP FAILED: APIError(code=-2019): Margin is insufficient.
+2025-11-01 01:43:54 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:43:54 | INFO     | BasicBot | execute_twap | EXECUTING TWAP STRATEGY: BUY 11.0 BTCUSDT
+2025-11-01 01:43:54 | INFO     | BasicBot | execute_twap | Orders: 10 | Interval: 6.00s
+2025-11-01 01:43:54 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:43:54 | INFO     | BasicBot | execute_twap | TWAP Order 1/10
+2025-11-01 01:43:54 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:54 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.1 BTCUSDT
+2025-11-01 01:43:54 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:54 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=1.1)
+2025-11-01 01:43:55 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:55 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:43:55 | ERROR    | BasicBot | place_market_order | Error Code: -2019
+2025-11-01 01:43:55 | ERROR    | BasicBot | place_market_order | Error Message: Margin is insufficient.
+2025-11-01 01:43:55 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:55 | ERROR    | BasicBot | execute_twap | TWAP FAILED: APIError(code=-2019): Margin is insufficient.
+2025-11-01 01:43:59 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:43:59 | INFO     | BasicBot | execute_twap | EXECUTING TWAP STRATEGY: BUY 11.0 BTCUSDT
+2025-11-01 01:43:59 | INFO     | BasicBot | execute_twap | Orders: 10 | Interval: 72.00s
+2025-11-01 01:43:59 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:43:59 | INFO     | BasicBot | execute_twap | TWAP Order 1/10
+2025-11-01 01:43:59 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:59 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.1 BTCUSDT
+2025-11-01 01:43:59 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:43:59 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=1.1)
+2025-11-01 01:44:00 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:00 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:44:00 | ERROR    | BasicBot | place_market_order | Error Code: -2019
+2025-11-01 01:44:00 | ERROR    | BasicBot | place_market_order | Error Message: Margin is insufficient.
+2025-11-01 01:44:00 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:00 | ERROR    | BasicBot | execute_twap | TWAP FAILED: APIError(code=-2019): Margin is insufficient.
+2025-11-01 01:44:08 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:44:08 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4968.81428888', 'crossWalletBalance': '4968.81428888', 'crossUnPnl': '32.56440001', 'availableBalance': '484.93657889', 'maxWithdrawAmount': '484.93657889', 'marginAvailable': True, 'updateTime': 1761941609843}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:44:30 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:30 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.0 BTCUSDT
+2025-11-01 01:44:30 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:30 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=1.0)
+2025-11-01 01:44:32 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:32 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:44:32 | ERROR    | BasicBot | place_market_order | Error Code: -2019
+2025-11-01 01:44:32 | ERROR    | BasicBot | place_market_order | Error Message: Margin is insufficient.
+2025-11-01 01:44:32 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 0.01 BTCUSDT
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.01)
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7993157809, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ1b384e062fc0fbab389c51', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941682293}
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | Order ID: 7993157809
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:44:41 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:41 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:44:42 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4968.37525688', 'crossWalletBalance': '4968.37525688', 'crossUnPnl': '67.89220001', 'availableBalance': '463.17995689', 'maxWithdrawAmount': '463.17995689', 'marginAvailable': True, 'updateTime': 1761941682293}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:44:52 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:52 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: SELL 0.01 BTCUSDT
+2025-11-01 01:44:52 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:52 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=SELL, type=MARKET, quantity=0.01)
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | API Response: {'orderId': 7993175043, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ67225d5bc91c2813177470', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1761941693887}
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | MARKET ORDER PLACED SUCCESSFULLY
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | Order ID: 7993175043
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | Status: NEW
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | Executed Qty: 0.000
+2025-11-01 01:44:54 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:44:54 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:44:55 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4968.87789627', 'crossWalletBalance': '4968.87789627', 'crossUnPnl': '67.02166062', 'availableBalance': '517.61240189', 'maxWithdrawAmount': '517.61240189', 'marginAvailable': True, 'updateTime': 1761941693887}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:45:18 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:45:18 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4968.87789627', 'crossWalletBalance': '4968.87789627', 'crossUnPnl': '76.67016247', 'availableBalance': '521.18267679', 'maxWithdrawAmount': '521.18267679', 'marginAvailable': True, 'updateTime': 1761941693887}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:52:15 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:52:15 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:52:15 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:52:15 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:52:16 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:52:17 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:52:18 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:52:18 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:52:18 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:52:18 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:52:19 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:52:19 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:52:28 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:52:28 | INFO     | BasicBot | execute_twap | EXECUTING TWAP STRATEGY: BUY 11.0 BTCUSDT
+2025-11-01 01:52:28 | INFO     | BasicBot | execute_twap | Orders: 10 | Interval: 72.00s
+2025-11-01 01:52:28 | INFO     | BasicBot | execute_twap | ================================================================================
+2025-11-01 01:52:28 | INFO     | BasicBot | execute_twap | TWAP Order 1/10
+2025-11-01 01:52:28 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:52:28 | INFO     | BasicBot | place_market_order | PLACING MARKET ORDER: BUY 1.1 BTCUSDT
+2025-11-01 01:52:28 | INFO     | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:52:28 | INFO     | BasicBot | place_market_order | API Request: futures_create_order(symbol=BTCUSDT, side=BUY, type=MARKET, quantity=1.1)
+2025-11-01 01:52:29 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:52:29 | ERROR    | BasicBot | place_market_order | BINANCE API ERROR
+2025-11-01 01:52:29 | ERROR    | BasicBot | place_market_order | Error Code: -2019
+2025-11-01 01:52:29 | ERROR    | BasicBot | place_market_order | Error Message: Margin is insufficient.
+2025-11-01 01:52:29 | ERROR    | BasicBot | place_market_order | ================================================================================
+2025-11-01 01:52:29 | ERROR    | BasicBot | execute_twap | TWAP FAILED: APIError(code=-2019): Margin is insufficient.
+2025-11-01 01:52:32 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 01:52:33 | INFO     | BasicBot | get_account_balance | API Response: [{'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BFUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1761935786417}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDT', 'balance': '4968.87789627', 'crossWalletBalance': '4968.87789627', 'crossUnPnl': '-33.64866192', 'availableBalance': '422.04669547', 'maxWithdrawAmount': '422.04669547', 'marginAvailable': True, 'updateTime': 1761941693887}, {'accountAlias': 'mYuXoCFzsRmYXq', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1761935786412}]
+2025-11-01 01:52:54 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:52:54 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:52:54 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:52:54 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:52:55 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:52:55 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 01:55:46 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:55:46 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 01:55:46 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 01:55:46 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 01:55:47 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 01:55:47 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API

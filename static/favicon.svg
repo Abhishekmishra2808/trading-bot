@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fcd535;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0c02f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#000000" stroke="url(#grad)" stroke-width="2"/>
+  
+  <!-- Bitcoin-style icon with trading elements -->
+  <g transform="translate(32, 32)">
+    <!-- Upward arrow (bull market) -->
+    <path d="M -10 8 L -10 -2 L -14 -2 L -6 -12 L 2 -2 L -2 -2 L -2 8 Z" fill="url(#grad)"/>
+    
+    <!-- Chart line -->
+    <path d="M -18 14 L -12 8 L -6 10 L 0 4 L 6 6 L 12 0" 
+          stroke="url(#grad)" 
+          stroke-width="2.5" 
+          fill="none" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Data points -->
+    <circle cx="-18" cy="14" r="2" fill="#fcd535"/>
+    <circle cx="-12" cy="8" r="2" fill="#fcd535"/>
+    <circle cx="-6" cy="10" r="2" fill="#fcd535"/>
+    <circle cx="0" cy="4" r="2" fill="#fcd535"/>
+    <circle cx="6" cy="6" r="2" fill="#fcd535"/>
+    <circle cx="12" cy="0" r="2" fill="#fcd535"/>
+  </g>
+</svg>

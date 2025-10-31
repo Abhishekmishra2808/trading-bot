@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Futures Trading Bot</title>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #000000;
+            --bg-card: #0a0a0a;
+            --bg-hover: #141414;
+            --text-primary: #ffffff;
+            --text-secondary: #71757a;
+            --binance-yellow: #fcd535;
+            --success-green: #03a66d;
+            --danger-red: #cf304a;
+            --border-color: #2b2b2b;
+            --input-bg: #1a1a1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+
+        .navbar {
+            background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand {
+            color: var(--binance-yellow) !important;
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: -0.02em;
+            text-shadow: 0 0 20px rgba(252, 213, 53, 0.3);
+        }
+
+        .card {
+            background: linear-gradient(135deg, var(--bg-card) 0%, #050505 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-header {
+            background: linear-gradient(90deg, rgba(252, 213, 53, 0.1) 0%, transparent 100%);
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 1.25rem;
+            font-size: 1.1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .form-label {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control, .form-select {
+            background-color: var(--input-bg);
+            border: 1.5px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: var(--bg-hover);
+            border-color: var(--binance-yellow);
+            color: var(--text-primary);
+            box-shadow: 0 0 0 3px rgba(252, 213, 53, 0.15);
+            outline: none;
+        }
+
+        .form-control::placeholder {
+            color: #4a4a4a;
+        }
+
+        .btn-buy {
+            background: linear-gradient(135deg, var(--success-green) 0%, #028a5a 100%);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(3, 166, 109, 0.3);
+        }
+
+        .btn-buy:hover {
+            background: linear-gradient(135deg, #04c97f 0%, #03a66d 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(3, 166, 109, 0.5);
+            color: white;
+        }
+
+        .btn-sell {
+            background: linear-gradient(135deg, var(--danger-red) 0%, #a82838 100%);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(207, 48, 74, 0.3);
+        }
+
+        .btn-sell:hover {
+            background: linear-gradient(135deg, #e6405a 0%, #cf304a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(207, 48, 74, 0.5);
+            color: white;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--binance-yellow) 0%, #e0c02f 100%);
+            border: none;
+            color: #000;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #ffe34d 0%, #fcd535 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(252, 213, 53, 0.4);
+            color: #000;
+        }
+
+        .badge {
+            font-weight: 500;
+            padding: 0.35em 0.65em;
+        }
+
+        .alert {
+            border-radius: 10px;
+            border: none;
+            padding: 1.25rem;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .alert-success {
+            background: linear-gradient(135deg, rgba(3, 166, 109, 0.15) 0%, rgba(2, 138, 90, 0.1) 100%);
+            color: var(--success-green);
+            border: 1px solid var(--success-green);
+        }
+
+        .alert-danger {
+            background: linear-gradient(135deg, rgba(207, 48, 74, 0.15) 0%, rgba(168, 40, 56, 0.1) 100%);
+            color: var(--danger-red);
+            border: 1px solid var(--danger-red);
+        }
+
+        .alert a {
+            color: inherit;
+            font-weight: 600;
+        }
+
+        .nav-pills .nav-link {
+            color: var(--text-secondary);
+            border-radius: 8px;
+            padding: 0.6rem 1.25rem;
+            margin-right: 0.5rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .nav-pills .nav-link:hover {
+            background-color: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, var(--binance-yellow) 0%, #e0c02f 100%);
+            color: #000;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(252, 213, 53, 0.3);
+        }
+
+        .testnet-badge {
+            background: linear-gradient(135deg, rgba(207, 48, 74, 0.2) 0%, rgba(168, 40, 56, 0.2) 100%);
+            color: var(--danger-red);
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 1px solid var(--danger-red);
+            letter-spacing: 0.05em;
+        }
+
+        .balance-item {
+            background: linear-gradient(135deg, var(--input-bg) 0%, #0d0d0d 100%);
+            padding: 1.25rem;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .balance-item:hover {
+            background: linear-gradient(135deg, var(--bg-hover) 0%, #0f0f0f 100%);
+            border-color: var(--binance-yellow);
+        }
+
+        .balance-asset {
+            font-weight: 700;
+            color: var(--binance-yellow);
+            font-size: 1.1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .balance-amount {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .autocomplete-dropdown {
+            position: absolute;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            width: 100%;
+            margin-top: 4px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .autocomplete-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .autocomplete-item:hover {
+            background-color: var(--bg-hover);
+            color: var(--binance-yellow);
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .symbol-label {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .symbol-type {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .spinner-border-sm {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .order-type-selector {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <i class="bi bi-graph-up-arrow"></i> Binance Futures Bot
+            </span>
+            <span class="testnet-badge">TESTNET</span>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div id="alertContainer"></div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-box-arrow-in-down-right"></i> Place Orders
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav nav-pills order-type-selector" id="orderTypeTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="market-tab" data-bs-toggle="pill" data-bs-target="#market" type="button">Market</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="limit-tab" data-bs-toggle="pill" data-bs-target="#limit" type="button">Limit</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="stop-limit-tab" data-bs-toggle="pill" data-bs-target="#stop-limit" type="button">Stop-Limit</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="oco-tab" data-bs-toggle="pill" data-bs-target="#oco" type="button">OCO</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="twap-tab" data-bs-toggle="pill" data-bs-target="#twap" type="button">TWAP</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="orderTypeContent">
+                            <!-- Market Order -->
+                            <div class="tab-pane fade show active" id="market" role="tabpanel">
+                                <form id="marketOrderForm">
+                                    <div class="mb-3 position-relative">
+                                        <label class="form-label">Symbol</label>
+                                        <input type="text" class="form-control symbol-input" name="symbol" placeholder="Search symbol (e.g., BTC, ETH)" autocomplete="off" required>
+                                        <div class="autocomplete-dropdown" style="display: none;"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Quantity</label>
+                                        <input type="number" step="0.001" class="form-control" name="quantity" placeholder="0.001" required>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex">
+                                        <button type="submit" class="btn btn-buy flex-fill" data-side="BUY">
+                                            <i class="bi bi-arrow-up-circle"></i> Buy
+                                        </button>
+                                        <button type="submit" class="btn btn-sell flex-fill" data-side="SELL">
+                                            <i class="bi bi-arrow-down-circle"></i> Sell
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Limit Order -->
+                            <div class="tab-pane fade" id="limit" role="tabpanel">
+                                <form id="limitOrderForm">
+                                    <div class="mb-3 position-relative">
+                                        <label class="form-label">Symbol</label>
+                                        <input type="text" class="form-control symbol-input" name="symbol" placeholder="Search symbol (e.g., BTC, ETH)" autocomplete="off" required>
+                                        <div class="autocomplete-dropdown" style="display: none;"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Quantity</label>
+                                        <input type="number" step="0.001" class="form-control" name="quantity" placeholder="0.001" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Price</label>
+                                        <input type="number" step="0.01" class="form-control" name="price" placeholder="50000" required>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex">
+                                        <button type="submit" class="btn btn-buy flex-fill" data-side="BUY">
+                                            <i class="bi bi-arrow-up-circle"></i> Buy
+                                        </button>
+                                        <button type="submit" class="btn btn-sell flex-fill" data-side="SELL">
+                                            <i class="bi bi-arrow-down-circle"></i> Sell
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Stop-Limit Order -->
+                            <div class="tab-pane fade" id="stop-limit" role="tabpanel">
+                                <form id="stopLimitOrderForm">
+                                    <div class="mb-3 position-relative">
+                                        <label class="form-label">Symbol</label>
+                                        <input type="text" class="form-control symbol-input" name="symbol" placeholder="Search symbol (e.g., BTC, ETH)" autocomplete="off" required>
+                                        <div class="autocomplete-dropdown" style="display: none;"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Quantity</label>
+                                        <input type="number" step="0.001" class="form-control" name="quantity" placeholder="0.001" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Stop Price</label>
+                                        <input type="number" step="0.01" class="form-control" name="stopPrice" placeholder="49000" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Limit Price</label>
+                                        <input type="number" step="0.01" class="form-control" name="price" placeholder="48500" required>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex">
+                                        <button type="submit" class="btn btn-buy flex-fill" data-side="BUY">
+                                            <i class="bi bi-arrow-up-circle"></i> Buy
+                                        </button>
+                                        <button type="submit" class="btn btn-sell flex-fill" data-side="SELL">
+                                            <i class="bi bi-arrow-down-circle"></i> Sell
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- OCO Order -->
+                            <div class="tab-pane fade" id="oco" role="tabpanel">
+                                <form id="ocoOrderForm">
+                                    <div class="mb-3 position-relative">
+                                        <label class="form-label">Symbol</label>
+                                        <input type="text" class="form-control symbol-input" name="symbol" placeholder="Search symbol (e.g., BTC, ETH)" autocomplete="off" required>
+                                        <div class="autocomplete-dropdown" style="display: none;"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Quantity</label>
+                                        <input type="number" step="0.001" class="form-control" name="quantity" placeholder="0.001" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Take Profit Price</label>
+                                        <input type="number" step="0.01" class="form-control" name="takeProfitPrice" placeholder="52000" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Stop Loss Price</label>
+                                        <input type="number" step="0.01" class="form-control" name="stopLossPrice" placeholder="48000" required>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex">
+                                        <button type="submit" class="btn btn-buy flex-fill" data-side="BUY">
+                                            <i class="bi bi-arrow-up-circle"></i> Buy
+                                        </button>
+                                        <button type="submit" class="btn btn-sell flex-fill" data-side="SELL">
+                                            <i class="bi bi-arrow-down-circle"></i> Sell
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- TWAP Strategy -->
+                            <div class="tab-pane fade" id="twap" role="tabpanel">
+                                <form id="twapForm">
+                                    <div class="mb-3 position-relative">
+                                        <label class="form-label">Symbol</label>
+                                        <input type="text" class="form-control symbol-input" name="symbol" placeholder="Search symbol (e.g., BTC, ETH)" autocomplete="off" required>
+                                        <div class="autocomplete-dropdown" style="display: none;"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Total Quantity</label>
+                                        <input type="number" step="0.001" class="form-control" name="totalQuantity" placeholder="0.01" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Duration (minutes)</label>
+                                        <input type="number" class="form-control" name="duration" placeholder="10" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Number of Orders</label>
+                                        <input type="number" class="form-control" name="numOrders" placeholder="10" value="10" required>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex">
+                                        <button type="submit" class="btn btn-buy flex-fill" data-side="BUY">
+                                            <i class="bi bi-arrow-up-circle"></i> Buy
+                                        </button>
+                                        <button type="submit" class="btn btn-sell flex-fill" data-side="SELL">
+                                            <i class="bi bi-arrow-down-circle"></i> Sell
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Status -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-search"></i> Check Order Status
+                    </div>
+                    <div class="card-body">
+                        <form id="orderStatusForm">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" name="symbol" placeholder="Symbol (e.g., BTCUSDT)" required>
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="number" class="form-control" name="orderId" placeholder="Order ID" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="orderStatusResult" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Account Balance -->
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-wallet2"></i> Account Balance</span>
+                        <button class="btn btn-sm btn-primary" onclick="loadBalance()">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh
+                        </button>
+                    </div>
+                    <div class="card-body" id="balanceContainer">
+                        <div class="text-center text-secondary">
+                            <i class="bi bi-wallet2" style="font-size: 3rem;"></i>
+                            <p class="mt-2">Click refresh to load balance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-clock-history"></i> Recent Activity
+                    </div>
+                    <div class="card-body" id="activityLog">
+                        <p class="text-secondary text-center">No recent activity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
