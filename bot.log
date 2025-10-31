@@ -773,3 +773,25 @@
 2025-11-01 01:55:46 | INFO     | BasicBot | _setup_logging | ================================================================================
 2025-11-01 01:55:47 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
 2025-11-01 01:55:47 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 02:50:41 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 02:50:41 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 02:50:41 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 02:50:41 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 02:50:42 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 02:50:42 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 02:50:43 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 02:50:43 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 02:50:43 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 02:50:43 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 02:50:44 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 02:50:45 | INFO     | BasicBot | _test_connection | Successfully connected to Binance Futures API
+2025-11-01 02:50:51 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 02:50:51 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-5000): Path /fapi/v1/v3/balance, Method GET is invalid
+2025-11-01 02:51:00 | INFO     | BasicBot | get_account_balance | Fetching account balance...
+2025-11-01 02:51:01 | ERROR    | BasicBot | get_account_balance | Failed to get balance: APIError(code=-5000): Path /fapi/v1/v3/balance, Method GET is invalid
+2025-11-01 02:53:35 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 02:53:35 | INFO     | BasicBot | _setup_logging | BasicBot initialized
+2025-11-01 02:53:35 | INFO     | BasicBot | _setup_logging | Testnet mode: True
+2025-11-01 02:53:35 | INFO     | BasicBot | _setup_logging | ================================================================================
+2025-11-01 02:53:36 | INFO     | BasicBot | __init__ | Using Binance Futures TESTNET: https://testnet.binancefuture.com
+2025-11-01 02:53:36 | ERROR    | BasicBot | _test_connection | Failed to connect to Binance API: APIError(code=-5000): Path /fapi/v3/ping, Method GET is invalid
