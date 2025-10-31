@@ -3,6 +3,7 @@ from binance.exceptions import BinanceAPIException, BinanceOrderException
 import logging
 from typing import Optional, Dict, Any
 import time
+import os
 
 
 class BasicBot:
@@ -26,25 +27,39 @@ class BasicBot:
     def _setup_logging(self):
         self.logger = logging.getLogger('BasicBot')
         self.logger.setLevel(logging.INFO)
-        
+
         if not self.logger.handlers:
-            file_handler = logging.FileHandler('bot.log')
-            file_handler.setLevel(logging.INFO)
-            
+            # Console handler first (always available, also safe on serverless)
             console_handler = logging.StreamHandler()
             console_handler.setLevel(logging.INFO)
-            
+
             formatter = logging.Formatter(
                 '%(asctime)s | %(levelname)-8s | %(name)s | %(funcName)s | %(message)s',
                 datefmt='%Y-%m-%d %H:%M:%S'
             )
-            
-            file_handler.setFormatter(formatter)
             console_handler.setFormatter(formatter)
-            
-            self.logger.addHandler(file_handler)
             self.logger.addHandler(console_handler)
-        
+
+            # Try to add a file handler (works locally). On Vercel, fallback to /tmp or disable.
+            file_handler = None
+            try:
+                file_handler = logging.FileHandler('bot.log')
+            except Exception as e:
+                # Serverless (e.g., Vercel) root FS is read-only; /tmp is writable
+                try:
+                    tmp_path = os.environ.get('LOG_FILE', '/tmp/bot.log')
+                    file_handler = logging.FileHandler(tmp_path)
+                    self.logger.warning(f"File logging redirected to {tmp_path}: {e}")
+                except Exception as e2:
+                    # If even /tmp fails, continue with console-only logging
+                    self.logger.warning(f"File logging disabled due to: {e} | {e2}")
+                    file_handler = None
+
+            if file_handler is not None:
+                file_handler.setLevel(logging.INFO)
+                file_handler.setFormatter(formatter)
+                self.logger.addHandler(file_handler)
+
         self.logger.info("=" * 80)
         self.logger.info("BasicBot initialized")
         self.logger.info(f"Testnet mode: {self.testnet}")
